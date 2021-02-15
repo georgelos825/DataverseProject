@@ -1,0 +1,86 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>DataverseProject</display-name>
+	<welcome-file-list>
+		<welcome-file>Login.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<description></description>
+		<display-name>RegisterServlet</display-name>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>com.mvc.controller.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/RegisterServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>ChangePasswordServlet</display-name>
+		<servlet-name>ChangePasswordServlet</servlet-name>
+		<servlet-class>com.mvc.controller.ChangePasswordServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ChangePasswordServlet</servlet-name>
+		<url-pattern>/ChangePasswordServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>UpdateProfileServlet</display-name>
+		<servlet-name>UpdateProfileServlet</servlet-name>
+		<servlet-class>com.mvc.controller.UpdateProfileServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateProfileServlet</servlet-name>
+		<url-pattern>/UpdateProfileServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<description></description>
+		<display-name>UpdateProfilePicServlet</display-name>
+		<servlet-name>UpdateProfilePicServlet</servlet-name>
+		<servlet-class>com.mvc.controller.UpdateProfilePicServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateProfilePicServlet</servlet-name>
+		<url-pattern>/UpdateProfilePicServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>LoginServlet</display-name>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.mvc.controller.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>LogoutServlet</display-name>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>com.mvc.controller.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/LogoutServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>ChangeProfilePicServlet</display-name>
+		<servlet-name>ChangeProfilePicServlet</servlet-name>
+		<servlet-class>com.mvc.controller.ChangeProfilePicServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ChangeProfilePicServlet</servlet-name>
+		<url-pattern>/ChangeProfilePicServlet</url-pattern>
+	</servlet-mapping>
+
+</web-app>
